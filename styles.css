@@ -2880,9 +2880,6 @@ footer{
 }
 
 @media(min-width: 0px) and (max-width: 565px){
-    .bikeRentals__confirmPopUp{
-        max-height: 1200px;
-    }
 
     .bikeRentals__confirmPopUp__bikeLists{
         max-height: 400px;
@@ -2892,13 +2889,13 @@ footer{
         width: 100%;
         margin: auto;
         display: block;
-        height: 380px;
+        height: 410px;
     }
 
     .bikeRentals__confirmPopUp__bikeLists__bike__image{
         display: block;
         margin: auto;
-        width: 50%;
+        width: 70%;
         height: 200px;
     }
 

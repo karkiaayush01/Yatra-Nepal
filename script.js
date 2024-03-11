@@ -224,9 +224,17 @@ function showConfirmPopUp(){ //function to show popup for rent confirm
             contentDiv.appendChild(totalPrice);
         }
         if(selected.length ==1){
-            document.getElementById("confirmPopUpId").style.height = "520px";
+            if(window.innerWidth > 565){
+                document.getElementById("confirmPopUpId").style.height = "520px";
+            }else {
+                document.getElementById("confirmPopUpId").style.height = "820px";
+            }
         } else {
-            document.getElementById("confirmPopUpId").style.height = "710px";
+            if(window.innerWidth > 565){
+                document.getElementById("confirmPopUpId").style.height = "710px";
+            }else {
+                document.getElementById("confirmPopUpId").style.height = "790px";
+            }
         }
         document.getElementById("totalPriceOnPopUp").textContent = total;
     }
