@@ -331,13 +331,14 @@ function changeAvatarContent(){ //function to change team avatar accroding to me
 setInterval(changeMessageContent, 5000);
 setInterval(changeAvatarContent, 5000);
 
-function checkNonEmpty(event){ //function to check the email field is not empty in footer
-    var emailId = document.getElementById("newsLetterId").value;
-    if(emailId == ''){
+function checkNonEmpty(event, formName){ //function to check the email field is not empty in footer
+    event.preventDefault();
+    var emailId = document.forms[formName]["newsLetterId"].value;
+    if(emailId === ''){
         alert("Empty email");
     }
     else{
         alert("Thank you! You will be alerted of our updates");
+        document.forms[formName]["newsLetterId"].value = '';
     }
-    event.preventDefault();
 }
