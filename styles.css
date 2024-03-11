@@ -1,0 +1,2910 @@
+*{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.header{
+    background-color: rgb(9, 9, 58);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav{
+    height: 18px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.header__nav__links{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header__nav__links:hover{
+    color: rgb(238, 212, 212);
+}
+
+.phone__navButton{
+    display: none;
+    position: absolute;
+    z-index: 6;
+    top: 1.5%;
+    left: 3%;
+    background-color: #09093A;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.phone__navButton:active{
+    transform: scale(0.95);
+}
+
+.phone__nav{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 9, 58, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone__nav__navList{
+    position: absolute;
+    height: auto;
+    width: 350px;
+    background-color: #09093A;
+}
+
+.phone__nav__navList__links{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px 0px;
+}
+
+.phone__nav__navList__links:hover{
+    text-decoration: underline;
+}
+
+.homeSection{
+    height: calc(100vh - 50px);
+    width:100%;
+    background-color: rgb(9, 9, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeSection__title{
+    color: white;
+    font-weight: bold;
+    width: 600px;
+    height: 300px;
+    padding-top:50px;
+}
+
+.homeSection__title span{
+    display: block;
+}
+
+.homeSection__title__heading{
+    font-size: 72px;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
+
+.homeSection__title__subHeading{
+    font-size: 24px;
+}
+
+.homeSection__image{
+    width: 600px;
+    height: 400px;
+}
+
+.whyUs{
+    width: 1150px;
+    height: 360px;
+    margin: 65px auto;
+}
+
+.whyUs__features{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.whyUs__features__feature{
+    text-align: center;
+    height: 100%;
+    width: 25%;
+}
+
+.whyUs__features__feature__image{
+    width: 100%;
+    height: 160px;
+    margin-bottom: 10px;
+}
+
+.whyUs__features__feature__heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.whyUs__features__feature__para{
+    font-size: 12px;
+    font-weight: 300;
+    color: #8C8484;
+}
+
+.mustangYatra{
+    display: flex;
+    width: 1150px;
+    margin: 0 auto 30px auto;
+}
+
+.mustangYatra__image{
+    height: 500px;
+    width: 370px;
+    margin-right: 30px;
+}
+
+.mustangYatra__description{
+    padding-top: 30px;
+}
+
+.mustangYatra__description__heading{
+    color: #170855;
+    font-size: 40px;
+}
+
+.mustangYatra__description__subHeading{
+    color: #170855;
+    font-size: 30px;
+}
+
+.mustangYatra__description__linkBar{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.mustangYatra__description__linkBar__separator{
+    width: 3px;
+    height: 22px;
+    background-color: #EAEAEA;
+}
+
+.mustangYatra__description__linkBar__link{
+    color: #3B41D0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mustangYatra__description__linkBar__link:hover{
+    text-decoration: underline;
+}
+
+.mustangYatra__description__info{
+    font-family: 'PT Sans',Arial, Helvetica, sans-serif;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.mustangYatra__description__deadlineInfo{
+    font-family: 'PT Sans',Arial, Helvetica, sans-serif;
+    color: #8C8484;
+    margin-bottom: 40px;
+}
+
+.mustangYatra__description__deadlineInfo span{
+    font-family: 'PT Sans',Arial, Helvetica, sans-serif;
+    color: #8C8484;
+}
+
+.mustangYatra__description__registerButton{
+    width: 200px;
+    height: 60px;
+    background-color: #09093A;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.mustangYatra__description__registerButton:hover{
+    color: #09093A;
+    background-color: white;
+}
+
+.mustangYatra__description__registerButton:active{
+    transform: scale(0.95);
+}
+
+.mustangYatra__detailsPopUp{
+    visibility: hidden;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 700px;
+    height: 510px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0px 30px;
+    z-index: 3;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mustangYatra__detailsPopUp.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.mustangYatra__closeButton{
+    position: relative;
+    left: 620px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mustangYatra__detailsPopUp__details{
+    background-color: #D9D9D9;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.mustangYatra__popUp__heading{
+    color: #170855;
+    font-size: 36px;
+    margin-bottom: 6px;
+}
+
+.mustangYatra__detailsPopUp__details__list{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.mustangYatra__detailsPopUp__details__list li{
+    margin-bottom: 5px;
+}
+
+.mustangYatra__detailsPopUp__details__list span{
+    display: inline-block;
+    font-weight: bold;
+    width: 70px;
+}
+
+.mustangYatra__pricingPopUp{
+    visibility: hidden;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 700px;
+    height: 330px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0px 30px;
+    z-index: 3;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mustangYatra__pricingPopUp.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.mustangYatra__pricingPopUp__details{
+    background-color: #D9D9D9;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.mustangYatra__pricingPopUp__details p{
+    margin: 20px 0px;
+}
+
+.mustangYatra__faqPopUp{
+    visibility: hidden;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 700px;
+    height: 550px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0px 30px;
+    z-index: 3;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mustangYatra__faqPopUp.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.mustangYatra__faqPopUp__details{
+    background-color: #D9D9D9;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.mustangYatra__faqPopUp__details__question{
+    margin: 20px 0px;
+}
+
+.mustangYatra__registerPopUp{
+    visibility: hidden;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 400px;
+    height: 520px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0px 40px;
+    z-index: 3;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mustangYatra__registerPopUp.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.mustangYatra__registerPopUp__closeButton{
+    position: relative;
+    left: 300px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mustangYatra__registerPopUp__heading{
+    color: #170855;
+    margin: 30px 0px 10px 0px;
+}
+
+.mustangYatra__registerPopUp__registerForm__radioHeading{
+    color: #170855;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.mustangYatra__registerPopUp__registerForm__textInput{
+    width: 100%;
+    height: 40px;
+    margin: 8px 0px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
+.mustangYatra__registerPopUp__registerForm__registerButton{
+    width: 150px;
+    height: 45px;
+    background-color: #09093A;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+}
+
+.mustangYatra__registerPopUp__registerForm__registerButton:hover{
+    background-color: white;
+    color: #09093A;
+    border: 1px solid #09093A;
+}
+
+.mustangYatra__registerPopUp__registerForm__registerButton:active{
+    transform: scale(0.95);
+}
+
+
+.bikeRentals{
+    background-color: rgb(9, 9, 58);
+    color: white;
+    height: 1310px;
+    width: 100%;
+    margin-top: 65px;
+    padding-top: 50px;
+}
+
+.bikeRentals__heading{
+    text-align: center;
+}
+
+.bikeRentals__row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1150px;
+    margin: 0px auto 50px auto;
+    justify-content: space-between;
+}
+
+.bikeRentals__row__bike{
+    height: 460px;
+    width: 350px;
+}
+
+.bikeRentals__row__bike__image{
+    width: 90%;
+    height: 270px;
+    margin: 0 auto;
+    display: block;
+}
+
+.bikeRentals__row__bike__details{
+    background-color: #232338;
+    padding: 10px 30px;
+}
+
+.bikeRentals__row__bike__rent{
+    display: flex;
+    width: 87%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    height: 30px;
+}
+
+.bikeRentals__row__bike__rent__button{
+    height: 30px;
+    width: 30px;
+    background-color: #09093A;
+    color: white;
+    border: 1px solid white;
+}
+
+.bikeRentals__row__bike__rent__button:hover{
+    cursor: pointer;
+    color: #09093A;
+    background-color: white;
+}
+
+.bikeRentals__row__bike__rent__counter{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bikeRentals__proceed{
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.bikeRentals__proceed__button{
+    width: 70%;
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+    background-color: #09093A;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border: 1px solid white;
+}
+
+.bikeRentals__proceed__button:hover{
+    cursor: pointer;
+    color: #09093A;
+    background-color: white;
+}
+
+.bikeRentals__proceed__button:active{
+    border: 5px solid #09093A;
+    font-size: 23px;
+}
+
+.bikeRentals__confirmPopUp{
+    visibility: hidden;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 650px;
+    height: 750px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0px 30px;
+    z-index: 3;
+    opacity: 0;
+    transition: 0.5s;
+    color: #170855;
+}
+
+.bikeRentals__confirmPopUp.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.bikeRentals__closeButton{
+    position: relative;
+    left:550px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bikeRentals__confirmPopUp__heading{
+    color: #170855;
+    margin: 20px 0px 15px 0px;
+    font-size: 30px;
+}
+
+.bikeRentals__confirmPopUp__bikeLists{
+    max-height: 390px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.bikeRentals__confirmPopUp__bikeLists__bike{
+    width: 580px;
+    height: 170px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.bikeRentals__confirmPopUp__bikeLists__bike__image{
+    width: 200px;
+    height: 100%;
+}
+
+.bikeRentals__confirmPopUp__bikeLists__bike__details{
+    padding-top: 20px;
+}
+
+.bikeRentals__confirmPopUp__bikeLists__bike__details__heading{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.bikeRentals__confirmPopUp__bikeLists__bike__details__totalPrice{
+    margin-top: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+.bikeRentals__confirmPopUp__totalPrice{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.bikeRentals__confirmPopUp__confirmButton{
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: 40px;
+    background-color: #09093A;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.bikeRentals__confirmPopUp__confirmButton:hover{
+    background-color: white;
+    color: #09093A;
+    border: 1px solid #09093A;
+}
+
+.bikeRentals__confirmPopUp__confirmButton:active{
+    transform: scale(0.97);
+}
+
+.bikeRentals__confirmPopUp__confirmForm input{
+    width: 200px;
+    height: 40px;
+    margin: 8px 0px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 10px auto;
+}
+
+.yotm{
+    display: flex;
+    width: 1150px;
+    margin: 0 auto 100px auto;
+    color: #170855;
+    padding-top: 80px;
+}
+
+.yotm__details{
+    width: 60%;
+}
+
+.yotm__details__heading{
+    font-size: 48px;
+}
+
+.yotm__details__subHeading{
+    font-size: 36px;
+}
+
+.yotm__details__saying * {
+    font-family: 'PT Sans', 'Arial', 'Helvetica';
+    color: black;
+}
+
+.yotm__details__saying__heading{
+    margin-top: 50px;
+    width: 380px;
+    height: 60px;
+    background-color: #DBD1D1;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.yotm__details__saying__body{
+    width: 380px;
+    height: 160px;
+    border: 2px solid #DBD1D1;
+    padding: 20px 60px 20px 18px;
+    font-size: 14px;
+}
+
+.yotm__details__saying__additional{
+    margin: 20px 0;
+    width: 380px;
+    height: 50px;
+    border: 1px solid #DBD1D1;
+    font-size: 14px;
+    padding: 15px 18px;
+}
+
+.yotm__image{
+    width: 35%;
+    height: 550px;
+}
+
+.team{
+    position: relative;
+    background-color: #09093A;
+    color: white;
+    height: 700px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.team__inline{
+    width: 1000px;
+    display: flex;
+    margin: 100px auto;
+    justify-content: space-between;
+}
+
+.team__inline__positions *{
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
+.team__inline__positions{
+    background-color: white;
+    color: black;
+    width: 500px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 60px;
+    filter: blur(2px);
+}
+
+.team__overlay{
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 38%;
+    left: 33%;
+    width: 550px;
+    height: 300px;
+    z-index: 1;
+    padding: 0px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team__overlay *{
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
+.team__avatars{
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 75%;
+    left: 33%;
+    z-index: 2;
+    padding: 0px 80px;
+}
+
+.team__avatars__inactive{
+    width: 80px;
+    height: 80px;
+}
+
+.team__avatars__active{
+    width: 100px;
+    height: 100px;
+}
+
+.gallery{
+    width: 1150px;
+    margin: auto;
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.gallery__heading{
+    text-align: center;
+    font-size: 48px;
+    color: #170855;
+}
+
+.gallery__videos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.gallery__videos__video{
+    width: 550px;
+    height: 340px;
+}
+
+.gallery__images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery__images__image{
+    width: 22%;
+    height: 180px;
+}
+
+.upcoming{
+    width: 1150px;
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.upcoming__heading{
+    color: #170855;
+    text-align: center;
+}
+
+.upcoming__lists{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.upcoming__lists__item{
+    width: 31%;
+}
+
+.upcoming__lists__item__image{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    z-index: 0;
+}
+
+.upcoming__lists__item__description{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    border: 1px solid #09093A;
+    margin-top: -70px;
+    z-index: 1;
+    background-color: white;
+    height: 200px;
+    padding: 30px;
+}
+
+.upcoming__lists__item:nth-of-type(2) .upcoming__lists__item__description {
+    margin-top: -40px;
+}
+
+.upcoming__lists__item__description__heading{
+    color: #170855;
+    font-size: 24px;
+}
+
+.upcoming__lists__item__description__subHeading{
+    color: #170855;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.upcoming__lists__item__description__para{
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 50px;
+}
+
+footer{
+    width: 100%;
+    background-color: #09093A;
+    display: flex;
+    color: white;
+    padding: 70px 150px;
+    justify-content: space-between;
+}
+
+.footer__description, .footer__NoFlexNoLink__description{
+    width: 300px;
+}
+
+.footer__description * {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
+.footer__NoFlexNoLink__description * {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
+.footer__description__logo{
+    width: 100px;
+}
+
+.footer__description__textContent__info{
+    width: 250px;
+    margin: 20px 0px;
+}
+
+.footer__description__textContent__contact{
+    line-height: 25px;
+}
+
+.footer__links{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.footer__links--compressed{
+    display: none;
+}
+
+.footer__lessThan750px{
+    display: none;
+}
+
+.footer__links__containers{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__links__containers a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer__links__containers a:hover{
+    text-decoration: underline;
+}
+
+.footer__newsLetter, .footer__NoFlexNoLink__newsLetter{
+    width: 300px;
+}
+
+.footer__newsLetter__para{
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.footer__newsLetter__emailInput{
+    height: 50px;
+    width: 250px;
+    border: 2px solid white;
+    background-color: #09093A;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer__newsLetter__subButton{
+    height: 35px;
+    width: 120px;
+    background-color: #20207A;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.footer__newsLetter__subButton:hover{
+    background-color: #09093A;
+}
+
+.footer__newsLetter__subButton:active{
+    transform: scale(0.95);
+}
+
+.footer__NoFlexNoLink{
+    display: none;
+}
+
+/*All styles below are only @media tags for responsiveness*/
+
+@media(min-width: 1451px) and (max-width: 1500px){
+    .team__overlay, .team__avatars{
+        left: 32%;
+    }
+}
+
+@media(min-width: 1400px) and (max-width: 1450px){
+    .team__overlay, .team__avatars{
+        left: 31%;
+    }
+    footer{
+        padding: 70px 100px;
+    }
+}
+
+@media(min-width: 1350px) and (max-width: 1400px){
+    .team__overlay, .team__avatars{
+        left: 30%;
+    }
+    footer{
+        padding: 70px 90px;
+    }
+}
+
+@media(min-width: 1300px) and (max-width: 1350px){
+    .team__overlay, .team__avatars{
+        left: 28%;
+    }
+    footer{
+        padding: 70px 80px;
+    }
+}
+
+@media(min-width: 1235px) and (max-width: 1300px){
+    .team__overlay, .team__avatars{
+        left: 27%;
+    }
+    footer{
+        padding: 70px 70px;
+    }
+    .footer__links{
+        width: 350px;
+    }
+}
+
+@media(min-width: 1200px) and (max-width: 1235px){
+    .team__overlay, .team__avatars{
+        left: 26%;
+    }
+    footer{
+        padding: 70px 50px;
+    }
+    .footer__links{
+        width: 330px;
+    }
+    .homeSection{
+        padding: 0px 30px;
+    }
+    .mustangYatra, .whyUs, .yotm{
+        margin-left: 30px;
+    }
+}
+
+@media(min-width: 1150px) and (max-width: 1200px){
+    .homeSection{
+        padding: 0px 50px;
+    }
+    .homeSection__image{
+        width: 500px;
+        height: 350px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+    }
+    .mustangYatra{
+        margin-left: 30px;
+    }
+    .bikeRentals__row, .yotm, .gallery, .upcoming, .whyUs, .mustangYatra{
+        width: 1100px;
+    }
+    .team__overlay, .team__avatars{
+        left: 24%;
+    }
+    .gallery__videos__video{
+        width: 530px;
+        height: 400px;
+    }
+    footer{
+        padding: 70px 40px;
+        gap: 20px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        width: 300px;
+    }
+}
+
+@media(min-width: 1100px) and (max-width: 1150px){
+    .homeSection{
+        padding: 0px 30px;
+    }
+    .homeSection__image{
+        width: 500px;
+        height: 350px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+    }
+    .mustangYatra{
+        margin-left: 30px;
+    }
+    .bikeRentals__row, .yotm, .gallery, .upcoming, .whyUs, .mustangYatra{
+        width: 1050px;
+    }
+    .team__overlay, .team__avatars{
+        left: 23%;
+    }
+    .gallery__videos{
+        margin-top: -20px;
+    }
+    .gallery__videos__video{
+        width: 500px;
+        height: 400px;
+    }
+    footer{
+        padding: 70px 40px;
+        gap: 20px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        width: 300px;
+    }
+}
+
+@media(min-width: 1050px) and (max-width: 1100px){
+    .homeSection{
+        display: block;
+        padding: 0px;
+    }
+    .homeSection__title{
+        text-align: center;
+        width: 100%;
+        height: 210px;
+    }
+    .homeSection__title__heading{
+        line-height: 30px;
+        margin-top: 30px;
+    }
+    .homeSection__title span{
+        display: inline;
+    }
+    .homeSection__image{
+        display: block;
+        margin: auto;
+        width: 700px;
+        height: 450px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+       margin-bottom: 110px;
+    }
+    .whyUs__features{
+        height: 320px;
+    }
+    .whyUs__features__feature__heading{
+        line-height: 27px;
+        margin-bottom: 5px;
+        height: 55px;
+    }
+    .mustangYatra{
+        margin-left: 30px;
+    }
+    .yotm, .gallery, .upcoming, .whyUs, .mustangYatra{
+        width: 1000px;
+    }
+    .bikeRentals{
+        height: 1350px;
+    }
+    .bikeRentals__row{
+        width: 980px;
+        margin-bottom: 0px;
+    }
+    .bikeRentals__row__bike{
+        height: 500px;
+        width: 300px;
+    }
+    .bikeRentals__row__bike__details{
+        height: 130px;
+    }
+    .bikeRentals__row__bike__details__info:first-of-type{
+        height: 60px;
+    }
+    .bikeRentals__proceed{
+        margin-top: 30px;
+    }
+    .team{
+        height: 100vh;
+    }
+    .team__overlay{
+        top: 35%;
+    }
+    .team__avatars{
+        top: 69%;
+    }
+    .team__overlay, .team__avatars{
+        left: 22.5%;
+    }
+    .gallery__videos{
+        margin-top: -20px;
+    }
+    .gallery__videos__video{
+        width: 480px;
+        height: 350px;
+    }
+    footer{
+        padding: 70px 40px;
+        gap: 20px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        width: 300px;
+    }
+}
+
+@media(min-width: 1000px) and (max-width: 1050px){
+    .homeSection{
+        display: block;
+        padding: 0px;
+    }
+    .homeSection__title{
+        text-align: center;
+        width: 100%;
+        height: 190px;
+    }
+    .homeSection__title__heading{
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .homeSection__title span{
+        display: inline;
+    }
+    .homeSection__image{
+        display: block;
+        margin: auto;
+        width: 700px;
+        height: 450px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+       margin-bottom: 110px;
+    }
+    .whyUs__features{
+        height: 300px;
+    }
+    .whyUs__features__feature__heading{
+        line-height: 27px;
+        margin-bottom: 5px;
+        height: 55px;
+    }
+    .mustangYatra{
+        margin-left: 30px;
+    }
+    .yotm, .gallery, .upcoming, .whyUs, .mustangYatra, .team__inline{
+        width: 950px;
+    }
+    .bikeRentals{
+        height: 1350px;
+    }
+    .bikeRentals__row{
+        width: 950px;
+        margin-bottom: 0px;
+    }
+    .bikeRentals__row__bike{
+        height: 500px;
+        width: 300px;
+    }
+    .bikeRentals__row__bike__details{
+        height: 130px;
+    }
+    .bikeRentals__row__bike__details__info:first-of-type{
+        height: 60px;
+    }
+    .bikeRentals__proceed{
+        margin-top: 30px;
+    }
+    .team{
+        height: 100vh;
+    }
+    .team__overlay{
+        top: 35%;
+    }
+    .team__avatars{
+        top: 69%;
+    }
+    .team__overlay, .team__avatars{
+        left: 21%;
+    }
+    .gallery__videos{
+        margin-top: -20px;
+    }
+    .gallery__videos__video{
+        width: 450px;
+        height: 350px;
+    }
+    footer{
+        padding: 70px 40px;
+        gap: 20px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        display: none;
+    }
+
+    .footer__links--compressed{
+        display: block;
+    }
+}
+
+@media(min-width: 950px) and (max-width: 1000px){
+    .homeSection{
+        display: block;
+        padding: 0px;
+    }
+    .homeSection__title{
+        text-align: center;
+        width: 100%;
+        height: 190px;
+    }
+    .homeSection__title__heading{
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .homeSection__title span{
+        display: inline;
+    }
+    .homeSection__image{
+        display: block;
+        margin: auto;
+        width: 700px;
+        height: 450px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+       margin-bottom: 110px;
+    }
+    .whyUs__features{
+        height: 300px;
+    }
+    .whyUs__features__feature__heading{
+        line-height: 27px;
+        margin-bottom: 5px;
+        height: 55px;
+    }
+    .mustangYatra{
+        margin-left: 30px;
+    }
+    .yotm, .gallery, .upcoming, .whyUs, .mustangYatra, .team__inline{
+        width: 900px;
+    }
+    .bikeRentals{
+        height: 1350px;
+    }
+    .bikeRentals__row{
+        width: 930px;
+        margin-bottom: 0px;
+    }
+    .bikeRentals__row__bike{
+        height: 500px;
+        width: 300px;
+    }
+    .bikeRentals__row__bike__details{
+        height: 130px;
+    }
+    .bikeRentals__row__bike__details__info:first-of-type{
+        height: 60px;
+    }
+    .bikeRentals__proceed{
+        margin-top: 30px;
+    }
+    .team{
+        height: 100vh;
+    }
+    .team__overlay{
+        top: 35%;
+    }
+    .team__avatars{
+        top: 69%;
+    }
+    .team__overlay, .team__avatars{
+        left: 19.5%;
+    }
+    .gallery__videos{
+        margin-top: -20px;
+    }
+    .gallery__videos__video{
+        width: 440px;
+        height: 330px;
+    }
+    footer{
+        padding: 70px 40px;
+        gap: 20px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        display: none;
+    }
+
+    .footer__links--compressed{
+        display: block;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 950px){
+    .header__nav{
+        gap: 40px;
+    }
+    .homeSection{
+        display: block;
+        padding: 0px;
+    }
+    .homeSection__title{
+        text-align: center;
+        width: 100%;
+        height: 190px;
+    }
+    .homeSection__title__heading{
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .homeSection__title span{
+        display: inline;
+    }
+    .homeSection__image{
+        display: block;
+        margin: auto;
+        width: 700px;
+        height: 450px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+       margin-bottom: 110px;
+       height: 900px;
+    }
+    .whyUs__features{
+        height: 400px;
+    }
+    .whyUs__features__feature__image{
+        height: 300px;
+    }
+    .whyUs__features__feature{
+        width: 45%;
+    }
+    .whyUs__features__feature__heading{
+        line-height: 27px;
+        margin-bottom: 5px;
+    }
+    .mustangYatra{
+        margin-left: 30px;
+    }
+    .yotm, .gallery, .upcoming, .whyUs, .mustangYatra, .team__inline{
+        width: 850px;
+    }
+    .bikeRentals{
+        height: 1860px;
+    }
+    .bikeRentals__row{
+        width: 650px;
+        margin-bottom: 0px;
+    }
+    .bikeRentals__row__bike{
+        height: 500px;
+        width: 300px;
+    }
+    .bikeRentals__row__bike__details{
+        height: 130px;
+    }
+    .bikeRentals__row__bike__details__info:first-of-type{
+        height: 60px;
+    }
+    .bikeRentals__proceed{
+        margin-top: 30px;
+    }
+    .team{
+        height: 100vh;
+    }
+    .team__overlay{
+        top: 35%;
+    }
+    .team__avatars{
+        top: 69%;
+    }
+    .team__overlay, .team__avatars{
+        left: 19.5%;
+    }
+    .gallery__videos{
+        margin-top: -20px;
+        display: block;
+        margin: auto;
+        width: 600px;
+    }
+    .gallery__videos__video{
+        width: 100%;
+        height: 400px;
+    }
+    .gallery__images{
+        width: 700px;
+        margin: 30px auto;
+        gap: 50px;
+    }
+    .gallery__images__image{
+        width: 46%;
+        height: 260px;
+    }
+    .upcoming__lists__item__description__heading{
+        font-size: 20px;
+    }
+    .upcoming__lists__item__description__para{
+        padding-right: 30px;
+    }
+    footer{
+        padding: 70px 20px 70px 40px;
+        gap: 20px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        display: none;
+    }
+
+    .footer__links--compressed{
+        display: block;
+    }
+}
+
+@media(min-width: 850px) and (max-width: 900px){
+    .header__nav{
+        gap: 30px;
+    }
+    .homeSection{
+        display: block;
+        padding: 0px;
+    }
+    .homeSection__title{
+        text-align: center;
+        width: 100%;
+        height: 190px;
+    }
+    .homeSection__title__heading{
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .homeSection__title span{
+        display: inline;
+    }
+    .homeSection__image{
+        display: block;
+        margin: auto;
+        width: 700px;
+        height: 450px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+       margin-bottom: 110px;
+       height: 900px;
+    }
+    .whyUs__features{
+        height: 400px;
+    }
+    .whyUs__features__feature__image{
+        height: 300px;
+    }
+    .whyUs__features__feature{
+        width: 45%;
+    }
+    .whyUs__features__feature__heading{
+        line-height: 27px;
+        margin-bottom: 5px;
+    }
+    .mustangYatra{
+        margin-left: 30px;
+    }
+    .yotm, .gallery, .upcoming, .whyUs, .mustangYatra, .team__inline{
+        width: 800px;
+    }
+    .bikeRentals{
+        height: 1860px;
+    }
+    .bikeRentals__row{
+        width: 650px;
+        margin-bottom: 0px;
+    }
+    .bikeRentals__row__bike{
+        height: 500px;
+        width: 300px;
+    }
+    .bikeRentals__row__bike__details{
+        height: 130px;
+    }
+    .bikeRentals__row__bike__details__info:first-of-type{
+        height: 60px;
+    }
+    .bikeRentals__proceed{
+        margin-top: 30px;
+    }
+    .team{
+        height: 100vh;
+    }
+    .team__overlay{
+        top: 35%;
+    }
+    .team__avatars{
+        top: 69%;
+    }
+    .team__overlay, .team__avatars{
+        left: 17%;
+    }
+    .gallery__videos{
+        margin-top: -20px;
+        display: block;
+        margin: auto;
+        width: 600px;
+    }
+    .gallery__videos__video{
+        width: 100%;
+        height: 400px;
+    }
+    .gallery__images{
+        width: 700px;
+        margin: 30px auto;
+        gap: 50px;
+    }
+    .gallery__images__image{
+        width: 46%;
+        height: 260px;
+    }
+    .upcoming__lists__item__description__heading{
+        font-size: 20px;
+    }
+    .upcoming__lists__item__description__para{
+        padding-right: 30px;
+    }
+    footer{
+        padding: 70px 20px 70px 40px;
+        gap: 20px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        display: none;
+    }
+
+    .footer__links--compressed{
+        display: block;
+    }
+}
+
+@media(min-width: 800px) and (max-width: 850px){
+    .header__nav{
+        gap: 25px;
+    }
+    .homeSection{
+        display: block;
+        padding: 0px;
+    }
+    .homeSection__title{
+        text-align: center;
+        width: 100%;
+        height: 190px;
+    }
+    .homeSection__title__heading{
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .homeSection__title span{
+        display: inline;
+    }
+    .homeSection__image{
+        display: block;
+        margin: auto;
+        width: 700px;
+        height: 450px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+       margin-bottom: 110px;
+       height: 900px;
+    }
+    .whyUs__features{
+        height: 400px;
+    }
+    .whyUs__features__feature__image{
+        height: 300px;
+    }
+    .whyUs__features__feature{
+        width: 45%;
+    }
+    .whyUs__features__feature__heading{
+        line-height: 27px;
+        margin-bottom: 5px;
+    }
+    .mustangYatra__image{
+        margin-right: 10px;
+    }
+    .mustangYatra{
+        margin-left: 0px;
+    }
+    .yotm, .gallery, .upcoming, .whyUs, .mustangYatra, .team__inline{
+        width: 750px;
+    }
+    .yotm__details{
+        width: 55%;
+    }
+    .yotm__details__subHeading{
+        font-size: 24px;
+    }
+    .yotm__image{
+        width: 45%;
+    }
+    .bikeRentals{
+        height: 1860px;
+    }
+    .bikeRentals__row{
+        width: 650px;
+        margin-bottom: 0px;
+    }
+    .bikeRentals__row__bike{
+        height: 500px;
+        width: 300px;
+    }
+    .bikeRentals__row__bike__details{
+        height: 130px;
+    }
+    .bikeRentals__row__bike__details__info:first-of-type{
+        height: 60px;
+    }
+    .bikeRentals__proceed{
+        margin-top: 30px;
+    }
+    .team{
+        height: 100vh;
+    }
+    .team__overlay{
+        top: 35%;
+    }
+    .team__avatars{
+        top: 69%;
+    }
+    .team__overlay, .team__avatars{
+        left: 16%;
+    }
+    .gallery__videos{
+        margin-top: -20px;
+        display: block;
+        margin: auto;
+        width: 600px;
+    }
+    .gallery__videos__video{
+        width: 100%;
+        height: 400px;
+    }
+    .gallery__images{
+        width: 700px;
+        margin: 30px auto;
+        gap: 50px;
+    }
+    .gallery__images__image{
+        width: 46%;
+        height: 260px;
+    }
+    .upcoming__lists__item__description__heading{
+        font-size: 20px;
+    }
+    .upcoming__lists__item__description__para{
+        padding-right: 30px;
+    }
+    footer{
+        padding: 70px 20px 70px 40px;
+        gap: 20px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        display: none;
+    }
+
+    .footer__links--compressed{
+        display: block;
+    }
+}
+
+@media(min-width: 750px) and (max-width: 800px){
+    .header__nav{
+        gap: 18px;
+    }
+    .homeSection{
+        display: block;
+        padding: 0px;
+    }
+    .homeSection__title{
+        text-align: center;
+        width: 100%;
+        height: 190px;
+    }
+    .homeSection__title__heading{
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .homeSection__title span{
+        display: inline;
+    }
+    .homeSection__image{
+        display: block;
+        margin: auto;
+        width: 700px;
+        height: 450px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+       margin-bottom: 60px;
+       height: 900px;
+    }
+    .whyUs__features{
+        height: 360px;
+        gap: 30px;
+    }
+    .whyUs__features__feature__image{
+        height: 270px;
+    }
+    .whyUs__features__feature{
+        width: 45%;
+    }
+    .whyUs__features__feature__heading{
+        line-height: 27px;
+        margin-bottom: 5px;
+    }
+    .mustangYatra__image{
+        margin-right: 10px;
+        scale: 90%;
+    }
+    .mustangYatra{
+        margin-left: -15px;
+    }
+    .mustangYatra__description__info{
+        width: 320px;
+        margin-bottom: 15px;
+    }
+    .mustangYatra__description__deadlineInfo{
+        margin-bottom: 25px;
+    }
+    .yotm, .gallery, .upcoming, .whyUs, .mustangYatra, .team__inline{
+        width: 700px;
+    }
+    .yotm__details{
+        width: 55%;
+    }
+    .yotm__details__subHeading{
+        font-size: 24px;
+    }
+    .yotm__image{
+        width: 45%;
+    }
+    .bikeRentals{
+        height: 1860px;
+    }
+    .bikeRentals__row{
+        width: 650px;
+        margin-bottom: 0px;
+    }
+    .bikeRentals__row__bike{
+        height: 500px;
+        width: 300px;
+    }
+    .bikeRentals__row__bike__details{
+        height: 130px;
+    }
+    .bikeRentals__row__bike__details__info:first-of-type{
+        height: 60px;
+    }
+    .bikeRentals__proceed{
+        margin-top: 30px;
+    }
+    .team{
+        height: 100vh;
+    }
+    .team__overlay{
+        top: 35%;
+    }
+    .team__avatars{
+        top: 69%;
+    }
+    .team__overlay, .team__avatars{
+        left: 12%;
+    }
+    .gallery__videos{
+        margin-top: -20px;
+        display: block;
+        margin: auto;
+        width: 600px;
+    }
+    .gallery__videos__video{
+        width: 100%;
+        height: 400px;
+    }
+    .gallery__images{
+        width: 700px;
+        margin: 30px auto;
+        gap: 50px;
+    }
+    .gallery__images__image{
+        width: 46%;
+        height: 260px;
+    }
+    .upcoming__lists{
+        display: block;
+    }
+    .upcoming__lists__item{
+        width: 400px;
+        display: block;
+        margin: 0px auto 30px auto;
+    }
+    .upcoming__lists__item__description__heading{
+        font-size: 20px;
+    }
+    .upcoming__lists__item__description__para{
+        padding-right: 30px;
+    }
+    footer{
+        padding: 70px 20px 70px 40px;
+        gap: 20px;
+        margin-top: -50px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        display: none;
+    }
+    .footer__lessThan750px{
+        display: block;
+    }
+    .footer__lessThan750px__links{
+        display: flex;
+        gap: 30px;
+    }
+    .footer__newsLetter{
+        display: none;
+    }
+    .responsiveFooter{
+        display: block;
+        margin-top: 40px;
+    }
+}
+
+@media(min-width: 700px) and (max-width: 750px){
+    .header{
+        display: none;
+    }
+    .phone__navButton{
+        display: block;
+    }
+    .homeSection{
+        display: block;
+        padding: 0px;
+        height: 100vh;
+    }
+    .homeSection__title{
+        text-align: center;
+        width: 100%;
+        height: 230px;
+    }
+    .homeSection__title__heading{
+        line-height: 30px;
+        margin-top: 60px;
+    }
+    .homeSection__title span{
+        display: inline;
+    }
+    .homeSection__image{
+        display: block;
+        margin: auto;
+        width: 600px;
+        height: 420px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+       margin-bottom: 60px;
+       height: 900px;
+    }
+    .whyUs__features{
+        height: 360px;
+        gap: 30px;
+    }
+    .whyUs__features__feature__image{
+        height: 270px;
+    }
+    .whyUs__features__feature{
+        width: 45%;
+    }
+    .whyUs__features__feature__heading{
+        line-height: 27px;
+        margin-bottom: 5px;
+    }
+    .mustangYatra{
+        margin-left: -15px;
+    }
+    .mustangYatra__image{
+        margin-right: 10px;
+        scale: 85%;
+    }
+    .mustangYatra__description__heading{
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .mustangYatra__description__subHeading{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mustangYatra__description__info{
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    .mustangYatra__description__deadlineInfo{
+        margin-bottom: 25px;
+    }
+    .yotm, .gallery, .upcoming, .whyUs, .mustangYatra, .team__inline{
+        width: 650px;
+    }
+    .yotm__details{
+        width: 55%;
+    }
+    .yotm__details__subHeading{
+        font-size: 24px;
+    }
+    .yotm__details__saying{
+        width: 330px;
+    }
+    .yotm__details__saying * {
+        width: 100%;
+    }
+    .yotm__image{
+        width: 45%;
+    }
+    .bikeRentals{
+        height: 1860px;
+    }
+    .bikeRentals__row{
+        width: 650px;
+        margin-bottom: 0px;
+    }
+    .bikeRentals__row__bike{
+        height: 500px;
+        width: 300px;
+    }
+    .bikeRentals__row__bike__details{
+        height: 130px;
+    }
+    .bikeRentals__row__bike__details__info:first-of-type{
+        height: 60px;
+    }
+    .bikeRentals__proceed{
+        margin-top: 30px;
+    }
+    .team{
+        height: 100vh;
+    }
+    .team__overlay{
+        top: 33%;
+        width: 300px;
+        height: 400px;
+    }
+    .team__inline{
+        margin-top: 80px;
+        width: 500px;
+        height: 360px;
+    }
+    .team__inline__positions{
+        height: 100%;
+    }
+    .team__avatars{
+        width: 250px;
+        top: 81%;
+        padding: 0px 20px;
+    }
+    .team__overlay, .team__avatars{
+        left: 29%;
+    }
+    .gallery__videos{
+        margin-top: -20px;
+        display: block;
+        margin: auto;
+        width: 600px;
+    }
+    .gallery__videos__video{
+        width: 100%;
+        height: 400px;
+    }
+    .gallery__images{
+        width: 650px;
+        margin: 30px auto;
+        gap: 50px;
+    }
+    .gallery__images__image{
+        width: 46%;
+        height: 260px;
+    }
+    .upcoming__lists{
+        display: block;
+    }
+    .upcoming__lists__item{
+        width: 400px;
+        display: block;
+        margin: 0px auto 30px auto;
+    }
+    .upcoming__lists__item__description__heading{
+        font-size: 20px;
+    }
+    .upcoming__lists__item__description__para{
+        padding-right: 30px;
+    }
+    footer{
+        padding: 70px 20px 70px 40px;
+        gap: 20px;
+        margin-top: -50px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        display: none;
+    }
+    .footer__lessThan750px{
+        display: block;
+    }
+    .footer__lessThan750px__links{
+        display: flex;
+        gap: 30px;
+    }
+    .footer__newsLetter{
+        display: none;
+    }
+    .responsiveFooter{
+        display: block;
+        margin-top: 40px;
+    }
+}
+
+@media(min-width: 650px) and (max-width: 700px){
+    .header{
+        display: none;
+    }
+    .phone__navButton{
+        display: block;
+    }
+    .homeSection{
+        display: block;
+        padding: 0px;
+        height: 100vh;
+    }
+    .homeSection__title{
+        text-align: center;
+        width: 100%;
+        height: 230px;
+    }
+    .homeSection__title__heading{
+        line-height: 30px;
+        margin-top: 60px;
+    }
+    .homeSection__title span{
+        display: inline;
+    }
+    .homeSection__image{
+        display: block;
+        margin: auto;
+        width: 600px;
+        height: 420px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+       margin-bottom: 0px;
+       height: 800px;
+    }
+    .whyUs__features{
+        height: 320px;
+        gap: 30px;
+    }
+    .whyUs__features__feature__image{
+        height: 200px;
+    }
+    .whyUs__features__feature{
+        width: 45%;
+    }
+    .whyUs__features__feature__heading{
+        line-height: 27px;
+        margin-bottom: 5px;
+    }
+    .mustangYatra{
+        margin-left: -30px;
+    }
+    .mustangYatra__image{
+        margin-right: -20px;
+        scale: 80%;
+    }
+    .mustangYatra__description__heading{
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .mustangYatra__description__subHeading{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mustangYatra__description__info{
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    .mustangYatra__description__deadlineInfo{
+        margin-bottom: 25px;
+    }
+    .yotm, .gallery, .upcoming, .whyUs, .mustangYatra, .team__inline{
+        width: 600px;
+    }
+    .yotm__details{
+        width: 55%;
+    }
+    .yotm__details__subHeading{
+        font-size: 20px;
+    }
+    .yotm__details__saying{
+        width: 300px;
+    }
+    .yotm__details__saying * {
+        width: 100%;
+    }
+    .yotm__image{
+        width: 45%;
+    }
+    .bikeRentals{
+        height: 1860px;
+    }
+    .bikeRentals__row{
+        width: 620px;
+        margin-bottom: 0px;
+    }
+    .bikeRentals__row__bike{
+        height: 500px;
+        width: 300px;
+    }
+    .bikeRentals__row__bike__details{
+        height: 130px;
+    }
+    .bikeRentals__row__bike__details__info:first-of-type{
+        height: 60px;
+    }
+    .bikeRentals__proceed{
+        margin-top: 30px;
+    }
+    .team{
+        height: 100vh;
+    }
+    .team__overlay{
+        top: 33%;
+        width: 300px;
+        height: 400px;
+    }
+    .team__inline{
+        margin-top: 80px;
+        width: 500px;
+        height: 360px;
+    }
+    .team__inline__positions{
+        height: 100%;
+    }
+    .team__avatars{
+        width: 250px;
+        top: 81%;
+        padding: 0px 20px;
+    }
+    .team__overlay, .team__avatars{
+        left: 27%;
+    }
+    .gallery__videos{
+        margin-top: -20px;
+        display: block;
+        margin: auto;
+        width: 600px;
+    }
+    .gallery__videos__video{
+        width: 100%;
+        height: 400px;
+    }
+    .gallery__images{
+        width: 600px;
+        margin: 30px auto;
+        gap: 30px;
+    }
+    .gallery__images__image{
+        width: 47%;
+        height: 260px;
+    }
+    .upcoming__lists{
+        display: block;
+    }
+    .upcoming__lists__item{
+        width: 400px;
+        display: block;
+        margin: 0px auto 30px auto;
+    }
+    .upcoming__lists__item__description__heading{
+        font-size: 20px;
+    }
+    .upcoming__lists__item__description__para{
+        padding-right: 30px;
+    }
+    footer{
+        padding: 70px 20px 70px 40px;
+        gap: 20px;
+        margin-top: -50px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        display: none;
+    }
+    .footer__lessThan750px{
+        display: block;
+    }
+    .footer__lessThan750px__links{
+        display: flex;
+        gap: 30px;
+    }
+    .footer__newsLetter{
+        display: none;
+    }
+    .responsiveFooter{
+        display: block;
+        margin-top: 40px;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 650px){
+    .header{
+        display: none;
+    }
+    .phone__navButton{
+        display: block;
+    }
+    .homeSection{
+        display: block;
+        padding: 0px;
+        height: 100vh;
+    }
+    .homeSection__title{
+        text-align: center;
+        width: 100%;
+        height: 230px;
+    }
+    .homeSection__title__heading{
+        line-height: 30px;
+        margin-top: 60px;
+    }
+    .homeSection__title span{
+        display: inline;
+    }
+    .homeSection__image{
+        display: block;
+        margin: auto;
+        width: 90%;
+        height: 420px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+       margin-bottom: 0px;
+       height: 800px;
+    }
+    .whyUs__features{
+        height: 320px;
+        gap: 30px;
+    }
+    .whyUs__features__feature__image{
+        height: 200px;
+    }
+    .whyUs__features__feature{
+        width: 45%;
+    }
+    .whyUs__features__feature__heading{
+        line-height: 27px;
+        margin-bottom: 5px;
+    }
+    .mustangYatra{
+        display: block;
+    }
+    .mustangYatra__image{
+        margin: auto;
+        display: block;
+    }
+    .mustangYatra__description{
+        width: 67%;
+        margin: auto;
+        display: block;
+    }
+    .mustangYatra__description__heading{
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .mustangYatra__description__subHeading{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mustangYatra__description__info{
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    .mustangYatra__description__deadlineInfo{
+        margin-bottom: 25px;
+    }
+    .yotm, .gallery, .upcoming, .whyUs, .mustangYatra, .team__inline{
+        width: 550px;
+    }
+    .yotm{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .yotm__details{
+        width: 55%;
+        margin: 0 auto 40px auto;
+    }
+    .yotm__details__subHeading{
+        font-size: 20px;
+    }
+    .yotm__details__saying{
+        width: 300px;
+    }
+    .yotm__details__saying * {
+        width: 100%;
+    }
+    .yotm__image{
+        width: 65%;
+        margin: 0px auto;
+        display: block;
+    }
+    .bikeRentals{
+        height: 3400px;
+    }
+    .bikeRentals__row{
+        width: 550px;
+        margin-bottom: 0px;
+    }
+    .bikeRentals__row__bike{
+        height: 500px;
+        width: 300px;
+        margin: auto;
+    }
+    .bikeRentals__row__bike__details{
+        height: 130px;
+    }
+    .bikeRentals__row__bike__details__info:first-of-type{
+        height: 60px;
+    }
+    .bikeRentals__proceed{
+        margin-top: 30px;
+    }
+    .team{
+        height: 100vh;
+    }
+    .team__overlay{
+        top: 33%;
+        width: 300px;
+        height: 400px;
+    }
+    .team__inline{
+        margin-top: 80px;
+        width: 500px;
+        height: 360px;
+    }
+    .team__inline__positions{
+        height: 100%;
+    }
+    .team__avatars{
+        width: 250px;
+        top: 81%;
+        padding: 0px 20px;
+    }
+    .team__overlay, .team__avatars{
+        left: 24%;
+    }
+    .gallery__videos{
+        margin-top: -20px;
+        display: block;
+        margin: auto;
+        width: 550px;
+    }
+    .gallery__videos__video{
+        width: 100%;
+        height: 400px;
+    }
+    .gallery__images{
+        width: 550px;
+        margin: 30px auto;
+        gap: 30px;
+        display: block;
+    }
+    .gallery__images__image{
+        width: 60%;
+        height: 260px;
+        display: block;
+        margin: 10px auto;
+    }
+    .upcoming__lists{
+        display: block;
+    }
+    .upcoming__lists__item{
+        width: 400px;
+        display: block;
+        margin: 0px auto 30px auto;
+    }
+    .upcoming__lists__item__description__heading{
+        font-size: 20px;
+    }
+    .upcoming__lists__item__description__para{
+        padding-right: 30px;
+    }
+    footer{
+        padding: 70px 10px;
+        gap: 20px;
+        margin-top: -50px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        display: none;
+    }
+    .footer__lessThan750px{
+        display: block;
+    }
+    .footer__lessThan750px__links{
+        display: flex;
+        gap: 30px;
+    }
+    .footer__newsLetter{
+        display: none;
+    }
+    .responsiveFooter{
+        display: block;
+        margin-top: 40px;
+    }
+}
+
+@media(min-width: 0px) and (max-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+    .header{
+        display: none;
+    }
+    .phone__navButton{
+        display: block;
+    }
+    .homeSection{
+        display: block;
+        padding: 0px;
+        height: 100vh;
+    }
+    .homeSection__title{
+        text-align: center;
+        width: 100%;
+        height: 230px;
+    }
+    .homeSection__title__heading{
+        line-height: 30px;
+        margin-top: 60px;
+    }
+    .homeSection__title span{
+        display: inline;
+    }
+    .homeSection__image{
+        display: block;
+        margin: auto;
+        width: 90%;
+        height: 420px;
+    }
+    .whyUs{ 
+       margin-left: 25px;
+       margin-bottom: 0px;
+       height: 1500px;
+       display: block;
+    }
+    .whyUs__features{
+        height: 320px;
+        gap: 30px;
+    }
+    .whyUs__features__feature__image{
+        height: 200px;
+    }
+    .whyUs__features__feature{
+        width: 60%;
+    }
+    .whyUs__features__feature__heading{
+        line-height: 27px;
+        margin-bottom: 5px;
+    }
+    .mustangYatra{
+        display: block;
+    }
+    .mustangYatra__image{
+        margin: auto;
+        display: block;
+        width: 80%;
+    }
+    .mustangYatra__description{
+        width: 67%;
+        margin: auto;
+        display: block;
+    }
+    .mustangYatra__description__heading{
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .mustangYatra__description__subHeading{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mustangYatra__description__info{
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    .mustangYatra__description__deadlineInfo{
+        margin-bottom: 25px;
+    }
+    .yotm, .gallery, .upcoming, .whyUs, .mustangYatra, .team__inline{
+        width: 90%;
+    }
+    .yotm{
+        display: block;
+        margin-bottom: 40px;
+        width: 90%;
+    }
+    .yotm__details{
+        width: 55%;
+        margin: 0 auto 40px auto;
+    }
+    .yotm__details__subHeading{
+        font-size: 20px;
+    }
+    .yotm__details__saying * {
+        width: 100%;
+        height: auto;
+    }
+
+    .yotm__details__saying__body{
+        height: auto;
+    }
+    .yotm__details__saying * {
+        width: 100%;
+    }
+    .yotm__image{
+        width: 65%;
+        margin: 0px auto;
+        display: block;
+    }
+    .bikeRentals{
+        height: 3400px;
+    }
+    .bikeRentals__row{
+        width: 90%;
+        margin-bottom: 0px;
+    }
+    .bikeRentals__row__bike{
+        height: 500px;
+        width: 300px;
+        margin: auto;
+    }
+    .bikeRentals__row__bike__details{
+        height: 130px;
+    }
+    .bikeRentals__row__bike__details__info:first-of-type{
+        height: 60px;
+    }
+    .bikeRentals__proceed{
+        margin-top: 30px;
+    }
+    .team{
+        height: 120vh;
+    }
+    .team h2{
+        height: 100px;
+    }
+    .team__overlay{
+        top: 33%;
+        width: 300px;
+        height: 400px;
+    }
+    .team__inline{
+        margin-top: 80px;
+        width: 500px;
+        height: 360px;
+    }
+    .team__inline__positions{
+        height: 100%;
+    }
+    .team__avatars{
+        width: 250px;
+        top: 72%;
+        padding: 0px 20px;
+    }
+    .team__overlay, .team__avatars{
+        left: 24%;
+    }
+    .gallery__videos{
+        margin-top: -20px;
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+    .gallery__videos__video{
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .gallery__images{
+        width: 100%;
+        margin: 30px auto;
+        gap: 30px;
+        display: block;
+    }
+    .gallery__images__image{
+        width: 70%;
+        height: 260px;
+        display: block;
+        margin: 10px auto;
+    }
+    .upcoming__lists{
+        display: block;
+    }
+    .upcoming__lists__item{
+        width: 400px;
+        display: block;
+        margin: 0px auto 30px auto;
+    }
+    .upcoming__lists__item__description__heading{
+        font-size: 20px;
+    }
+    .upcoming__lists__item__description__para{
+        padding-right: 30px;
+    }
+    footer{
+        padding: 70px 10px;
+        gap: 20px;
+        margin-top: -50px;
+    }
+    .footer__description{
+        width: 280px;
+    }
+    .footer__links{
+        display: none;
+    }
+    .footer__newsLetter{
+        display: none;
+    }
+    .footer__description{
+        display: none;
+    }
+
+    .footer__NoFlexNoLink{
+        display: block;
+        padding-left: 30px;
+        width: 90%;
+    }
+
+    .footer__NoFlexNoLink__description, .footer__NoFlexNoLink__newsLetter{
+        margin-bottom: 40px;
+        width: 90%;
+    }
+
+    .footer__NoFlexNoLink__description p ,.footer__NoFlexNoLink__newsLetter p {
+        width: 100%;
+    }
+
+    .footer__NoFlexNoLink__newsLetter input{
+        display: block;
+    }
+}
+
+@media(min-width: 0px) and (max-width: 550px){
+    .team__overlay, .team__avatars{
+        left: 21%;
+    }
+}
+
+@media(min-width: 0px) and (max-width: 500px){
+    .homeSection__title__heading{
+        line-height: 60px;
+        margin-top: 20px;
+    }
+    .homeSection__image{
+        margin-top: 70px;
+        height: 400px;
+    }
+}
+
+@media(min-width: 0px) and (max-width: 450px){
+    .team__inline{
+        width: 90%;
+    }
+
+    .team__inline__positions{
+        overflow: hidden;
+    }
+
+    .team__overlay, .team__avatars{
+        left: 15%;
+    }
+}
+
+@media(min-width: 0px) and (max-width: 430px){
+    .team__overlay, .team__avatars{
+        left: 12%;
+    }
+}
+
+@media(min-width: 0px) and (max-width: 400px){
+    .team__overlay, .team__avatars{
+        left: 8%;
+    }
+}
+
+@media(min-width: 0px) and (max-width: 750px){
+    .mustangYatra__faqPopUp, .mustangYatra__detailsPopUp, .mustangYatra__pricingPopUp{
+        width: 90%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .mustangYatra__closeButton{
+        left: 95%;
+    }
+    .bikeRentals__confirmPopUp{
+        width: 90%;
+    }
+    .bikeRentals__closeButton{
+        left: 95%;
+    }
+}
+
+@media(min-width:950px){
+    .whyUs__features{
+        flex-wrap: nowrap;
+    }
+}
+
+@media(min-width: 0px) and (max-width: 565px){
+    .bikeRentals__confirmPopUp{
+        max-height: 1200px;
+    }
+
+    .bikeRentals__confirmPopUp__bikeLists{
+        max-height: 400px;
+        width: 95%;
+    }
+    .bikeRentals__confirmPopUp__bikeLists__bike{
+        width: 100%;
+        margin: auto;
+        display: block;
+        height: 380px;
+    }
+
+    .bikeRentals__confirmPopUp__bikeLists__bike__image{
+        display: block;
+        margin: auto;
+        width: 50%;
+        height: 200px;
+    }
+
+    .bikeRentals__confirmPopUp__bikeLists__bike__details{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}

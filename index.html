@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage - Yatra</title>
+        <link rel = "stylesheet" href = "styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/df1048234d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <header class = "header">
+            <nav class = "header__nav">
+                <a class = "header__nav__links" href = "#whyUsId">Why Us?</a>
+                <a class = "header__nav__links" href = "#mustangYatraId">Yatra@Mustang</a>
+                <a class = "header__nav__links" href = "#bikeRentalsId">Bike Rentals</a>
+                <a class = "header__nav__links" href = "#yotmId">YOTM</a>
+                <a class = "header__nav__links" href = "#teamId">Team</a>
+                <a class = "header__nav__links" href = "#galleryId">Gallery</a>
+                <a class = "header__nav__links" href = "#upcomingId">Upcoming Yatras</a>
+            </nav>
+        </header>
+
+        <button class = "phone__navButton" id = "phoneNavButtonId" onclick="showPhoneNav()" style = "position: absolute;">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class = "phone__nav" id = "phoneNavId" style = "visibility: hidden;">
+            <div class = "phone__nav__navList">
+                <a class = "phone__nav__navList__links" href = "#whyUsId" onclick = "removePhoneNav()">Why Us?</a>
+                <a class = "phone__nav__navList__links" href = "#mustangYatraId" onclick = "removePhoneNav()">Yatra@Mustang</a>
+                <a class = "phone__nav__navList__links" href = "#bikeRentalsId" onclick = "removePhoneNav()">Bike Rentals</a>
+                <a class = "phone__nav__navList__links" href = "#yotmId" onclick = "removePhoneNav()">YOTM</a>
+                <a class = "phone__nav__navList__links" href = "#teamId" onclick = "removePhoneNav()">Team</a>
+                <a class = "phone__nav__navList__links" href = "#galleryId" onclick = "removePhoneNav()">Gallery</a>
+                <a class = "phone__nav__navList__links" href = "#upcomingId" onclick = "removePhoneNav()">Upcoming Yatras</a>
+            </div>
+        </div>
+
+        <section class = "homeSection">
+            <div class = "homeSection__title">
+                <p class = "homeSection__title__heading"><span>YATRA</span> NEPAL</p>
+                <p class = "homeSection__title__subHeading">Promoting bike travels all over Nepal.</p>
+            </div>
+            <img class = "homeSection__image" src = "./Images/homeImage.jpg" alt = "A biker with two bikes doing a thumbs up pose"></img>
+        </section>
+
+        <section class = "whyUs" id = "whyUsId">
+            <h1 style = "font-size: 36px; text-align: center;">Why Us?</h1>
+            <p style = "text-align: center; color: #8C8484; margin-bottom: 40px;">Why choosing Yatra Nepal is the way to go</p>
+            <div class = "whyUs__features">
+                <div class = "whyUs__features__feature">
+                    <img class = "whyUs__features__feature__image" src = "./Images/affordable.png" alt = "A money tree reflecting affordability">
+                    <h4 class = "whyUs__features__feature__heading">Affordable</h4>
+                    <p class = "whyUs__features__feature__para">Our services are very reasonable with the price and you will be able to save a lot.</p>
+                </div>
+                <div class = "whyUs__features__feature">
+                    <img class = "whyUs__features__feature__image" src = "./Images/team.jpg" alt = "A group of bikers">
+                    <h4 class = "whyUs__features__feature__heading">Experienced Team</h4>
+                    <p class = "whyUs__features__feature__para">We have a team of well experienced bikers. With us, you are in safe hands.</p>
+                </div>
+                <div class = "whyUs__features__feature">
+                    <img class = "whyUs__features__feature__image" src = "./Images/Bike Rentals.png" alt = "Two dirt bikes">
+                    <h4 class = "whyUs__features__feature__heading">Valuable Rentals</h4>
+                    <p class = "whyUs__features__feature__para">We have a wide range of bikes to rent out and the prices are very affordable.</p>
+                </div>
+                <div class = "whyUs__features__feature">
+                    <img class = "whyUs__features__feature__image" src = "./Images/adventure.png" style = "width: 90%;" alt = "a bike rider staring towards a mountain">
+                    <h4 class = "whyUs__features__feature__heading">Great Adventure</h4>
+                    <p class = "whyUs__features__feature__para">You are on for an adventurous journey with us with monthly trips on a new place.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class = "mustangYatra" id = "mustangYatraId">
+            <img class = "mustangYatra__image" src = "./Images/yatra_mustang.png" alt = "Two riders driving towards a mountain demostrated as a poster for mustang trip">
+            <div class = "mustangYatra__description">
+                <h1 class = "mustangYatra__description__heading">Yatra@Mustang</h1>
+                <h2 class="mustangYatra__description__subHeading" margin-bottom: 30px;">10-17 April</h2>
+                <div class = "mustangYatra__description__linkBar">
+                    <a class = "mustangYatra__description__linkBar__link" onclick="toggleDisplay('detailsPopUpId')">Details</a>
+                    <div class = "mustangYatra__description__linkBar__separator"></div>
+                    <a class = "mustangYatra__description__linkBar__link" onclick="toggleDisplay('pricingPopUpId')">Pricing</a>
+                    <div class = "mustangYatra__description__linkBar__separator"></div>
+                    <a class = "mustangYatra__description__linkBar__link" onclick="toggleDisplay('faqPopUpId')">FAQ</a>
+                </div>
+                <p class = "mustangYatra__description__info">A fascinating travel awaits you! This April, we have decided to travel to Mustang, the heart of tour spots in Nepal. Join us to become a member in this journey and enjoy the chilly atmosphere.</p>
+                <p class = "mustangYatra__description__deadlineInfo">Registration open till 5th April &lpar;Slots Available: <span id = "slotsAvailable">12</span>&rpar;</p>
+                <button class = "mustangYatra__description__registerButton" onclick = "checkSlotsAndProiveForm()">Register Now ></button>
+            </div>
+
+            <div class = "mustangYatra__detailsPopUp" id = "detailsPopUpId">
+                <button class = "mustangYatra__closeButton" onclick="toggleDisplay('detailsPopUpId')"> x </button>
+                <div class = "mustangYatra__detailsPopUp__details">
+                    <h1 class = "mustangYatra__popUp__heading">Details</h1>
+                    <p style = "margin-bottom: 10px;">This 8-day-long trip commences from Kathmandu. We will be riding to the following routes in order:</p>
+                    <ul class = "mustangYatra__detailsPopUp__details__list">
+                        <li><span>Day 1:</span> Kathmandu To Pokhara</li>
+                        <li><span>Day 2:</span> Pokhara To Kalopani</li>
+                        <li><span>Day 3:</span> Kalopani To Shamar</li>
+                        <li><span>Day 4:</span> Shamar To Lo-Mangthang Village</li>
+                        <li><span>Day 5:</span> Lo-Mangthang Village To Kagbeni</li>
+                        <li><span>Day 6:</span> Kagbeni To Tatopani</li>
+                        <li><span>Day 7:</span> Tatopani To Pokhara</li>
+                        <li><span>Day 8:</span> Pokhara To Kathmandu</li>
+                    </ul>
+                    <p>Lodging and food between the days are all managed by the team</p>
+                </div>
+            </div>
+
+            <div class = "mustangYatra__pricingPopUp" id = "pricingPopUpId">
+                <button class = "mustangYatra__closeButton" onclick="toggleDisplay('pricingPopUpId')"> x </button>
+                <div class = "mustangYatra__pricingPopUp__details">
+                    <h1 class = "mustangYatra__popUp__heading">Pricing</h1>
+                    <p>The pricing for the trip with your own bike is Rs. 12000. This includes all the fooding, lodging and safety benefits.</p>
+                    <p>You can check and rent bikes from our <a href = "#bikeRentalsId" onClick = "toggleDisplay('pricingPopUpId')">rentals</a> section as per your requirement as well.</p>
+                </div>
+            </div>
+
+            <div class = "mustangYatra__faqPopUp" id = "faqPopUpId">
+                <button class = "mustangYatra__closeButton" onclick = "toggleDisplay('faqPopUpId')"> x </button>
+                <div class = "mustangYatra__faqPopUp__details">
+                    <h1 class = "mustangYatra__popUp__heading">FAQ</h1>
+                    <div class = "mustangYatra__faqPopUp__details__question">
+                        <div style = "display:flex; gap: 15px; margin-bottom: 5px;"><span>Q.</span> <p>How many people are generally in a trip? </p></div>
+                        <div style = "display:flex; gap: 15px;"><span>A:</span> <p>Our trip generally consists of 15-20 members. The maximum number of members we accept for a trip is 25 excluding the team members.</p></div>
+                    </div>
+                    <div class = "mustangYatra__faqPopUp__details__question">
+                        <div style = "display:flex; gap: 15px; margin-bottom: 5px;"><span>Q.</span><p>How safe are the trips? </p></div>
+                        <div style = "display:flex; gap: 15px;"><span>A:</span><p>The trips are very safe. We have many professionals in out team that make sure that all the trip conditions are optimal and that includes both natural conditions and the trip’s. If the trip conditions are not safe, we delay the trip as well.</p></div>
+                    </div>
+                    <div class = "mustangYatra__faqPopUp__details__question">
+                        <div style = "display:flex; gap: 15px; margin-bottom: 5px;"><span>Q.</span><p>The slots are full, can I get an extra slot? </p></div>
+                        <div style = "display:flex; gap: 15px;"><span>A:</span><p>While our trip usually has extra slots, we cannot say for sure. If you see that there are no slots available, you can email us at info@yatranepal.com and we will inform you if we can offer you a slot.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "mustangYatra__registerPopUp" id = "registerPopUpId">
+                <button class = "mustangYatra__registerPopUp__closeButton" onclick = "toggleDisplay('registerPopUpId')"> x </button>
+                <h3 class = "mustangYatra__registerPopUp__heading">Please fill in the following details</h3>
+                <form class = "mustangYatra__registerPopUp__registerForm" name = "registerForm" onsubmit="checkForm(event)">
+                    <input class = "mustangYatra__registerPopUp__registerForm__textInput" name = "name" type = "text" placeholder="Your Name">
+                    <input class = "mustangYatra__registerPopUp__registerForm__textInput" name = "address" type = "text" placeholder="Your Address">
+                    <input class = "mustangYatra__registerPopUp__registerForm__textInput" name = "phone" type = "text" placeholder="Phone Number">
+                    <input class = "mustangYatra__registerPopUp__registerForm__textInput" name = "email" type = "email" placeholder="Your Email Address">
+                    <p class = "mustangYatra__registerPopUp__registerForm__radioHeading">Will you bring your own bike?</p>
+                    <input type = "radio" name = "checkOwnBike" checked> <span>Yes, I will bring my own bike</span><br />
+                    <input type = "radio" name = "checkOwnBike"> <span>No, I will rent /have rented </span><br />
+                    <button class = "mustangYatra__registerPopUp__registerForm__registerButton">Register ></button>
+                </form>
+            </div>
+        </section>
+
+        <section class = "bikeRentals" id = "bikeRentalsId">
+            <h1 class = "bikeRentals__heading" style = "font-size: 40px;">Bike Rentals</h1>
+            <h3 class = "bikeRentals__heading" style = "font-size: 16px; margin-bottom: 50px;">Check out which bikes we have for rentals (Max 7 days rent available)</h3>
+            <div class = "bikeRentals__row">
+
+                <div class = "bikeRentals__row__bike">
+                    <img class = "bikeRentals__row__bike__image" src = "./Images/royalEnfield.png">
+                    <div class = "bikeRentals__row__bike__details">
+                        <p class = "bikeRentals__row__bike__details__info" style = "font-size: 20px;">Royal Enfield Classic 350</p>
+                        <p class = "bikeRentals__row__bike__details__info" style = "font-size: 15px;">Price: 1700/day <br />In stock: 3</p>
+                    </div>
+                    <div class = "bikeRentals__row__bike__rent">
+                        <p>No. of Bikes</p>
+                        <div style = "display: flex;">
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "decreaseCounter(0)">-</button>
+                            <div class = "bikeRentals__row__bike__rent__counter" id = "counter0">0</div>
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "increaseCounter(0)">+</button>
+                        </div>
+                    </div>
+                    <div class = "bikeRentals__row__bike__rent">
+                        <p>No. of Days</p>
+                        <div style = "display: flex;">
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "decreaseCounter(1)">-</button>
+                            <div class = "bikeRentals__row__bike__rent__counter" id = "counter1">0</div>
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "increaseCounter(1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "bikeRentals__row__bike">
+                    <img class = "bikeRentals__row__bike__image" src = "./Images/royalEnfield410.png">
+                    <div class = "bikeRentals__row__bike__details">
+                        <p class = "bikeRentals__row__bike__details__info" style = "font-size: 20px;">Royal Enfield Himalayan 410</p>
+                        <p class = "bikeRentals__row__bike__details__info" style = "font-size: 15px;">Price: 1850/day <br />In Stock: 2</p>
+                    </div>
+                    <div class = "bikeRentals__row__bike__rent">
+                        <p>No. of Bikes</p>
+                        <div style = "display: flex;">
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "decreaseCounter(2)">-</button>
+                            <div class = "bikeRentals__row__bike__rent__counter" id = "counter2">0</div>
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "increaseCounter(2)">+</button>
+                        </div>
+                    </div>
+                    <div class = "bikeRentals__row__bike__rent">
+                        <p>No. of Days</p>
+                        <div style = "display: flex;">
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "decreaseCounter(3)">-</button>
+                            <div class = "bikeRentals__row__bike__rent__counter" id = "counter3">0</div>
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "increaseCounter(3)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "bikeRentals__row__bike">
+                    <img class = "bikeRentals__row__bike__image" src = "./Images/xtz150.png">
+                    <div class = "bikeRentals__row__bike__details">
+                        <p class = "bikeRentals__row__bike__details__info" style = "font-size: 20px;">Yamaha XTZ 150</p>
+                        <p class = "bikeRentals__row__bike__details__info" style = "font-size: 15px;">Price: 1600/day <br />In stock: 1</p>
+                    </div>
+                    <div class = "bikeRentals__row__bike__rent">
+                        <p>No. of Bikes</p>
+                        <div style = "display: flex;">
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "decreaseCounter(4)">-</button>
+                            <div class = "bikeRentals__row__bike__rent__counter" id = "counter4">0</div>
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "increaseCounter(4)">+</button>
+                        </div>
+                    </div>
+                    <div class = "bikeRentals__row__bike__rent">
+                        <p>No. of Days</p>
+                        <div style = "display: flex;">
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "decreaseCounter(5)">-</button>
+                            <div class = "bikeRentals__row__bike__rent__counter" id = "counter5">0</div>
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "increaseCounter(5)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "bikeRentals__row__bike">
+                    <img class = "bikeRentals__row__bike__image" src = "./Images/gixer.png">
+                    <div class = "bikeRentals__row__bike__details">
+                        <p class = "bikeRentals__row__bike__details__info" style = "font-size: 20px;">Suzuki Gixxer 155</p>
+                        <p class = "bikeRentals__row__bike__details__info" style = "font-size: 15px;">Price: 1400/day <br />In stock: 4</p>
+                    </div>
+                    <div class = "bikeRentals__row__bike__rent">
+                        <p>No. of Bikes</p>
+                        <div style = "display: flex;">
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "decreaseCounter(6)">-</button>
+                            <div class = "bikeRentals__row__bike__rent__counter" id = "counter6">0</div>
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "increaseCounter(6)">+</button>
+                        </div>
+                    </div>
+                    <div class = "bikeRentals__row__bike__rent">
+                        <p>No. of Days</p>
+                        <div style = "display: flex;">
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "decreaseCounter(7)">-</button>
+                            <div class = "bikeRentals__row__bike__rent__counter" id = "counter7">0</div>
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "increaseCounter(7)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "bikeRentals__row__bike">
+                    <img class = "bikeRentals__row__bike__image" src = "./Images/ns200.png">
+                    <div class = "bikeRentals__row__bike__details">
+                        <p class = "bikeRentals__row__bike__details__info" style = "font-size: 20px;">Bajaj Pulsar NS 200</p>
+                        <p class = "bikeRentals__row__bike__details__info" style = "font-size: 15px;">Price: 1300/day <br />In Stock: 5</p>
+                    </div>
+                    <div class = "bikeRentals__row__bike__rent">
+                        <p>No. of Bikes</p>
+                        <div style = "display: flex;">
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "decreaseCounter(8)">-</button>
+                            <div class = "bikeRentals__row__bike__rent__counter" id = "counter8">0</div>
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "increaseCounter(8)">+</button>
+                        </div>
+                    </div>
+                    <div class = "bikeRentals__row__bike__rent">
+                        <p>No. of Days</p>
+                        <div style = "display: flex;">
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "decreaseCounter(9)">-</button>
+                            <div class = "bikeRentals__row__bike__rent__counter" id = "counter9">0</div>
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "increaseCounter(9)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "bikeRentals__row__bike">
+                    <img class = "bikeRentals__row__bike__image" src = "./Images/apache.png">
+                    <div class = "bikeRentals__row__bike__details">
+                        <p class = "bikeRentals__row__bike__details__info" style = "font-size: 20px;">Apache RTR 200V</p>
+                        <p class = "bikeRentals__row__bike__details__info" style = "font-size: 15px;">Price: 1400/day <br />In stock: 4</p>
+                    </div>
+                    <div class = "bikeRentals__row__bike__rent">
+                        <p>No. of Bikes</p>
+                        <div style = "display: flex;">
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "decreaseCounter(10)">-</button>
+                            <div class = "bikeRentals__row__bike__rent__counter" id = "counter10">0</div>
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "increaseCounter(10)">+</button>
+                        </div>
+                    </div>
+                    <div class = "bikeRentals__row__bike__rent">
+                        <p>No. of Days</p>
+                        <div style = "display: flex;">
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "decreaseCounter(11)">-</button>
+                            <div class = "bikeRentals__row__bike__rent__counter" id = "counter11">0</div>
+                            <button class = "bikeRentals__row__bike__rent__button" onclick = "increaseCounter(11)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "bikeRentals__proceed">
+                <h2>Total Price: Rs. <span id = "totalPrice">0</span></h2>
+                <button class = "bikeRentals__proceed__button" onclick="showConfirmPopUp()">Proceed</button>
+            </div>
+
+            <div class = "bikeRentals__confirmPopUp" id = "confirmPopUpId">
+                <button class = "bikeRentals__closeButton" onclick="toggleDisplay('confirmPopUpId')"> x </button>
+                <h1 class = "bikeRentals__confirmPopUp__heading">Confirm Your Purchase</h1>
+                <div class = "bikeRentals__confirmPopUp__bikeLists" id = "bikeLists"></div>
+                <h2 class = "bikeRentals__confirmPopUp__totalPrice">Total Price: Rs. <span id = "totalPriceOnPopUp">0</span></h2>
+                <form name = "confirmForm" class="bikeRentals__confirmPopUp__confirmForm" onsubmit="validateConfirmForm(event)">
+                    <input name = "confirmFormName" type = "text" placeholder="Your Name">
+                    <input name = "confirmFormNumber" type = "text" placeholder="Your Phone Number">
+                    <button type = "submit" class = "bikeRentals__confirmPopUp__confirmButton">Confirm</button>
+                </form>
+            </div>
+        </section>
+
+        <section class = "yotm" id = "yotmId">
+            <div class = "yotm__details">
+                <h1 class = "yotm__details__heading">Marc Karki</h1>
+                <h2 class = "yotm__details__subHeading">Yatri Of The Month @March</h2>
+                <div class = "yotm__details__saying">
+                    <p class = "yotm__details__saying__heading">Let's hear what he has to say</p>
+                    <p class = "yotm__details__saying__body">“Being a member of Yatra Nepal has been a wonderful experience and being the Yatri Of The Month on top of that feels even better. I am glad to be a member of the community and will love to be a part of further exciting adventure that awaits us.”</p>
+                    <p class = "yotm__details__saying__additional">Yatri Member For: 2 years</p>
+                    <p class = "yotm__details__saying__additional">Total no. of travels so far: 13</p>
+                </div>
+            </div>
+            <img class = "yotm__image" src = "./Images/yotm.jpg" alt = "a picutre of a bike rider">
+        </section>
+
+        <section class = "team" id = "teamId">
+            <h1 style = "font-size: 48px;">Team</h1>
+            <h2 style = "font-size: 32px;">Let's hear from our team members</h2>
+            <div class = "team__inline">
+                <div class = "team__inline__positions">
+                    <div id = "member1">
+                        <p>I make sure we have the best bike available for rentals. Every bike of ours is sent through a monthly servicing and made sure they are in optimal condition for our rent out.</p><br/>
+                        <p> Rajesh Shakya <br/>Vehicle Handler</p>
+                    </div>
+                </div>
+                <div class = "team__inline__positions">
+                    <div id = "member2">
+                        <p>I am responsible for making all the planning for the upcoming trips. Selecting the location, making the reservations and deciding the members count, all falls under my work.</p><br/>
+                        <p>Suresh Panta<br/>Travel Planner</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "team__overlay">
+                <div id = "member3">
+                    <p>Being a safety manager is a concerning task. I have to make sure that our travels is safe and all the Yatris have their best experience with us. We make sure that you are in safe hands with our safety methods.</p><br />
+                    <p>Dinesh Basnet<br/>Safety Manager</p>
+                </div>
+            </div>
+            <div class = "team__avatars">
+                <img class = "team__avatars__inactive" id = "avatar1" src = "./Images/avatar1.png">
+                <img class = "team__avatars__active" id = "avatar2" src = "./Images/avatar2.png">
+                <img class = "team__avatars__inactive" id = "avatar3" src = "./Images/avatar3.png">
+            </div>
+        </section>
+
+        <section class = "gallery" id = "galleryId">
+            <h1 class = "gallery__heading">Gallery</h1>
+            <div class = "gallery__videos" id = "galleryVideosId">
+                <video controls class = "gallery__videos__video">
+                    <source src = "./Videos/Travel1.mp4" type = "video/mp4">
+                </video>
+                <video controls class = "gallery__videos__video">
+                    <source src = "./Videos/Travel2.mp4" type = "video/mp4">
+                </video>
+            </div>
+
+            <div class = "gallery__images" id = "galleryImagesId">
+                <img class = "gallery__images__image" src = "./Images/gallery1.jpg">
+                <img class = "gallery__images__image" src = "./Images/gallery2.png">
+                <img class = "gallery__images__image" src = "./Images/gallery3.jpg">
+                <img class = "gallery__images__image" src = "./Images/gallery4.png">
+            </div>
+        </section>
+
+        <section class = "upcoming" id = "upcomingId">
+            <h1 class = "upcoming__heading" style = "font-size: 48px">Upcoming Yatras</h1>
+            <h2 class = "upcoming__heading" style = "font-size: 36px">Take a look at what we’ve got next</h2>
+            <div class = "upcoming__lists">
+                <div class = "upcoming__lists__item">
+                    <img class = "upcoming__lists__item__image" src = "./Images/yatra_darchula.jpg">
+                    <div class = "upcoming__lists__item__description">
+                        <h2 class = "upcoming__lists__item__description__heading">Yatra@Darchula</h2>
+                        <h3 class = "upcoming__lists__item__description__subHeading">12-13 May</h3>
+                        <p class = "upcoming__lists__item__description__para">This May, let’s enjoy the scenic beauty of the Far-west on a well-planned ride.</p>
+                    </div>
+                </div>
+
+                <div class = "upcoming__lists__item">
+                    <img class = "upcoming__lists__item__image" src = "./Images/yatra_bhedetar.jpg">
+                    <div class = "upcoming__lists__item__description">
+                        <h2 class = "upcoming__lists__item__description__heading">Yatra@Bhedetar</h2>
+                        <h3 class = "upcoming__lists__item__description__subHeading">June TBD</h3>
+                        <p class = "upcoming__lists__item__description__para">June marks for a ride to Dharan, where we will be loving to ride the roads of Bhedetar.</p>
+                    </div>
+                </div>
+
+                <div class = "upcoming__lists__item">
+                    <img class = "upcoming__lists__item__image" src = "./Images/yatra_ilam.jpg">
+                    <div class = "upcoming__lists__item__description">
+                        <h2 class = "upcoming__lists__item__description__heading">Yatra@Ilam</h2>
+                        <h3 class = "upcoming__lists__item__description__subHeading">July TBD</h3>
+                        <p class = "upcoming__lists__item__description__para">Join us to the land of tea, with an exciting journey all around Ilam in July.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class = "footer__description">
+                <img class = "footer__description__logo" src = "./Images/Logo.png">
+                <div class = "footer__description__textContent">
+                    <p class = "footer__description__textContent__info">We are a team dedicated to promote bike riding and display the natural beauty of our country to a larger audience.</p>
+                    <p class = "footer__description__textContent__contact">Address: Kamaladi, Kathmandu <br/> Email: info@yatranepal.com <br/> Phone: 01-2223344</p>
+                </div>
+            </div>
+
+            <div class = "footer__links">
+                <div class = "footer__links__containers">
+                    <h3>Useful Links</h3>
+                    <a href = "#whyUsId">Why Us?</a>
+                    <a href = "#bikeRentalsId">Bike Rentals</a>
+                    <a href = "#yotmId">YOTM</a>
+                    <a href = "#teamId">Team</a>
+                </div>
+                <div class = "footer__links__containers">
+                    <h3>Gallery</h3>
+                    <a href = "#galleryVideosId">Videos</a>
+                    <a href = "#galleryImagesId">Images</a>
+                    <h3 style = "margin-top: 30px;">Yatras</h3>
+                    <a href = "#mustangYatraId">Yatra@Mustang</a>
+                    <a href = "#upcomingId">Upcoming Yatras</a>
+                </div>
+            </div>
+
+            <div class = "footer__links--compressed">
+                <div class = "footer__links__containers">
+                    <h3>Useful Links</h3>
+                    <a href = "#whyUsId">Why Us?</a>
+                    <a href = "#bikeRentalsId">Bike Rentals</a>
+                    <a href = "#yotmId">YOTM</a>
+                    <a href = "#teamId">Team</a>
+                    <a href = "#galleryId">Gallery</a>
+                    <a href = "#mustangYatraId">Yatra@Mustang</a>
+                    <a href = "#upcomingId">Upcoming Yatras</a>
+                </div>
+            </div>
+
+            <div class = "footer__lessThan750px">
+                <div class = "footer__lessThan750px__links">
+                    <div class = "footer__links__containers">
+                        <h3>Useful Links</h3>
+                        <a href = "#whyUsId">Why Us?</a>
+                        <a href = "#bikeRentalsId">Bike Rentals</a>
+                        <a href = "#yotmId">YOTM</a>
+                        <a href = "#teamId">Team</a>
+                    </div>
+                    <div class = "footer__links__containers">
+                        <h3>&nbsp;</h3>
+                        <a href = "#galleryId">Gallery</a>
+                        <a href = "#mustangYatraId">Yatra@Mustang</a>
+                        <a href = "#upcomingId">Upcoming Yatras</a>
+                    </div>
+                </div>
+                <div class = "footer__newsLetter responsiveFooter">
+                    <h3>Subscribe to Newsletter!</h3>
+                    <p class = "footer__newsLetter__para">Subscribe to our newsletter to stay updated about upcoming travels and news.</p>
+                    <form onsubmit = "checkNonEmpty(event)">
+                        <input id = "newsLetterId" class = "footer__newsLetter__emailInput" type = "email" placeholder="Enter your email address">
+                        <button type = "submit" class = "footer__newsLetter__subButton">Subscribe!</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class = "footer__newsLetter">
+                <h3>Subscribe to Newsletter!</h3>
+                <p class = "footer__newsLetter__para">Subscribe to our newsletter to stay updated about upcoming travels and news.</p>
+                <form onsubmit = "checkNonEmpty(event)">
+                    <input id = "newsLetterId" class = "footer__newsLetter__emailInput" type = "email" placeholder="Enter your email address">
+                    <button type = "submit" class = "footer__newsLetter__subButton">Subscribe!</button>
+                </form>
+            </div>
+
+            <div class = "footer__NoFlexNoLink">
+                <div class = "footer__NoFlexNoLink__description">
+                    <img class = "footer__description__logo" src = "./Images/Logo.png">
+                    <div class = "footer__description__textContent">
+                        <p class = "footer__description__textContent__info">We are a team dedicated to promote bike riding and display the natural beauty of our country to a larger audience.</p>
+                        <p class = "footer__description__textContent__contact">Address: Kamaladi, Kathmandu <br/> Email: info@yatranepal.com <br/> Phone: 01-2223344</p>
+                    </div>
+                </div>
+
+                <div class = "footer__NoFlexNoLink__newsLetter">
+                    <h3>Subscribe to Newsletter!</h3>
+                    <p class = "footer__newsLetter__para">Subscribe to our newsletter to stay updated about upcoming travels and news.</p>
+                    <form onsubmit = "checkNonEmpty(event)">
+                        <input id = "newsLetterId" class = "footer__newsLetter__emailInput" type = "email" placeholder="Enter your email address">
+                        <button type = "submit" class = "footer__newsLetter__subButton">Subscribe!</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+        <script src = "./script.js"></script>
+    </body>
+</html>
