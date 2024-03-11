@@ -2850,10 +2850,8 @@ footer{
     }
     .upcoming__lists{
         width: 95%;
-        border: 1px solid;
     }
     .upcoming__lists__item{
-        border: 1px solid;
         width: 100%;
     }
     .upcoming__lists__item__image{
