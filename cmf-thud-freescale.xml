@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<manifest>
+    <!-- no more usage of meta-metrological. alternate is meta-wpe -->
+    <remove-project name="WebPlatformForEmbedded/meta-wpe" path="meta-wpe"/>
+
+    <project name="WebPlatformForEmbedded/meta-wpe" remote="github" path="meta-wpe" revision="acf7df1a2f985ed293f74d1cd2f1dca8ffee3510" />
+
+    <remove-project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="rdk-next"/>
+    <remove-project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="rdk-next"/>
+    <remove-project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="rdk-next"/>
+    <remove-project name="components/restricted/rdk-oe/meta-rdk-restricted" path="meta-rdk-restricted" revision="rdk-next"/>
+    <remove-project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="rdk-next"/>
+    <remove-project name="components/restricted/rdk-oe/meta-cmf-restricted" path="meta-cmf-restricted" revision="rdk-next"/>
+    <remove-project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="rdk-next"/>
+    <remove-project name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted"/>
+    <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="3d94cc00acd617c83c89e8c724114e74a0d21f6e"/>
+    <project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="ba7a8e2bd5d04d539136bc4474bb9cf74d913d66"/>
+    <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="e1bec56a9d2e1bc1374eebf5843f89f929fd0a61"/>
+    <project name="components/restricted/rdk-oe/meta-rdk-restricted" path="meta-rdk-restricted" revision="fa479a505ca51a4a1e544fcd1659dc610ed77763"/>
+    <project name="components/restricted/rdk-oe/meta-cmf-restricted" path="meta-cmf-restricted" revision="cb3e5db9b6d362e5eee0a94e51fff3938c040f55"/>
+    <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="56fcd823c21ce5515812ed6d12620aaa26db025d"/>
+    <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="db230332a2ccb20354aa26567940d361acfb1494"/>
+    <project name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted" revision="d4a1b824775318b237ad9cf92593796bb6d208eb"/>
+</manifest>
