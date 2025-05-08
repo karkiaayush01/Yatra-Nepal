@@ -3,5 +3,5 @@
   <remote name="github" fetch="git@github.com:karkiaayush01/" />
   <default revision="main" remote="github" sync-j="4" />
   
-  <project path="React-Calculator" name="React-Calculator.git.git" />
+  <project path="React-Calculator" name="React-Calculator.git" revision="5aad35b23f111a167dffb9285e5ec2dde191ecc1"/>
 </manifest>
