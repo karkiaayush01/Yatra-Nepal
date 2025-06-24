@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <remote name="github" fetch="git@github.com:karkiaayush01/" />
-  <default revision="main" remote="github" sync-j="4" />
-  
-  <project path="React-Calculator" name="React-Calculator.git" revision="1ace9f2fc8da7d75cebff7ea721f0ad05981ce24"/>
-</manifest>
